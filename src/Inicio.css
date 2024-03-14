@@ -1,0 +1,16 @@
+.inicio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.inicio-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.inicio-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
