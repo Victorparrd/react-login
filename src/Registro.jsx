@@ -23,6 +23,7 @@ const Registro = () => {
         try {
             const response = await axios.post('https://vetesoft.com.py/veteadmin/api/auth/registro/', formData);
             console.log(response.data);
+            window.location.href = '/login';
             window.alert('Registro exitoso');
         } catch (error) {
             console.error(error);
@@ -33,7 +34,7 @@ const Registro = () => {
 
     return (
         <div className="registro-container">
-            <h2>Registro</h2>
+            <h2>Registrarte</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="first_name">Nombre:</label>
                 <input type="text" id="first_name" name="first_name" value={formData.first_name} onChange={handleChange} />
@@ -47,7 +48,7 @@ const Registro = () => {
                 <label htmlFor="email">Email:</label>
                 <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
 
-                <label htmlFor="password">Password:</label>
+                <label htmlFor="password">Contraseña:</label>
                 <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} />
 
                 <label htmlFor="fecha_nacimiento">Fecha de Nacimiento:</label>

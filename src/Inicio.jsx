@@ -4,9 +4,9 @@ import './Inicio.css';
 function Inicio() {
     return (
         <div className="inicio-container">
-            <h2>Bienvenido!</h2>
+            <h2>¡Bienvenido!</h2>
             <p>
-                Hola!
+                ¡Hola!
             </p>
         </div>
     );
